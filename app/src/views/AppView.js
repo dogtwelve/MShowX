@@ -11,7 +11,7 @@ define(function(require, exports, module) {
     function AppView() {
         View.apply(this, arguments);
 
-        _createCamera.call(this);
+        //_createCamera.call(this);
         _createSlideshow.call(this);
     }
 
@@ -23,27 +23,32 @@ define(function(require, exports, module) {
         cameraWidth: 0.5 * window.innerHeight
     };
 
-    AppView.DEFAULT_OPTIONS.slideWidth = 0.8 * AppView.DEFAULT_OPTIONS.cameraWidth;
-    AppView.DEFAULT_OPTIONS.slideHeight = AppView.DEFAULT_OPTIONS.slideWidth + 40;
-    AppView.DEFAULT_OPTIONS.slidePosition = 0.77 * AppView.DEFAULT_OPTIONS.cameraWidth;
+    //AppView.DEFAULT_OPTIONS.slideWidth = 0.8 * AppView.DEFAULT_OPTIONS.cameraWidth;
+    //AppView.DEFAULT_OPTIONS.slideHeight = AppView.DEFAULT_OPTIONS.slideWidth + 40;
+    //AppView.DEFAULT_OPTIONS.slidePosition = 0.77 * AppView.DEFAULT_OPTIONS.cameraWidth;
+    //
+    //function _createCamera() {
+    //    var camera = new ImageSurface({
+    //        size: [this.options.cameraWidth, true],
+    //        content: 'img/camera.png',
+    //        properties: {
+    //            width: '100%'
+    //        }
+    //    });
+    //
+    //    var cameraModifier = new StateModifier({
+    //        origin: [0.5, 0],
+    //        align: [0.5, 0],
+    //        transform: Transform.behind
+    //    });
+    //
+    //    this.add(cameraModifier).add(camera);
+    //}
 
-    function _createCamera() {
-        var camera = new ImageSurface({
-            size: [this.options.cameraWidth, true],
-            content: 'img/camera.png',
-            properties: {
-                width: '100%'
-            }
-        });
+    AppView.DEFAULT_OPTIONS.slideWidth = 1.0 * window.innerWidth;
+    AppView.DEFAULT_OPTIONS.slideHeight = 1.0 * window.innerHeight;
+    AppView.DEFAULT_OPTIONS.slidePosition = 0;
 
-        var cameraModifier = new StateModifier({
-            origin: [0.5, 0],
-            align: [0.5, 0],
-            transform: Transform.behind
-        });
-
-        this.add(cameraModifier).add(camera);
-    }
 
     function _createSlideshow() {
         var slideshowView = new SlideshowView({
