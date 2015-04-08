@@ -45,8 +45,8 @@ define(function(require, exports, module) {
     //    this.add(cameraModifier).add(camera);
     //}
 
-    AppView.DEFAULT_OPTIONS.slideWidth = 1.0 * window.innerWidth;
-    AppView.DEFAULT_OPTIONS.slideHeight = 1.0 * window.innerHeight;
+    AppView.DEFAULT_OPTIONS.slideWidth = 0.5 * window.innerWidth;
+    AppView.DEFAULT_OPTIONS.slideHeight = 0.5 * window.innerHeight;
     AppView.DEFAULT_OPTIONS.slidePosition = 0;
 
 
