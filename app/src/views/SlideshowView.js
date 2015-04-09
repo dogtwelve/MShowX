@@ -30,15 +30,36 @@ define(function(require, exports, module) {
         size: [450, 500],
         data: undefined,
         lightboxOpts: {
-            inOpacity: 1,
+            //inOpacity: 1,
+            //outOpacity: 0,
+            //inOrigin: [0, 0],
+            //outOrigin: [0, 0],
+            //showOrigin: [0, 0],
+            //inTransform: Transform.thenMove(Transform.rotateX(0.9), [0, -300, -300]),
+            //outTransform: Transform.thenMove(Transform.rotateZ(0.7), [0, window.innerHeight, -1000]),
+            //inTransition: { duration: 650, curve: 'easeOut' },
+            //outTransition: { duration: 500, curve: Easing.inCubic }
+            // 'in' state
+
+
+            inTransform: Transform.scale(0.001, 0.001, 0.001),
+            inOpacity: 0,
+            inOrigin: [0.5, 0.5],
+
+            // 'show' state
+            showTransform: Transform.identity,
+            showOpacity: 1,
+            showOrigin: [0.5, 0.5],
+
+            // 'out' state
+            outTransform: Transform.scale(0.001, 0.001, 0.001),
             outOpacity: 0,
-            inOrigin: [0, 0],
-            outOrigin: [0, 0],
-            showOrigin: [0, 0],
-            inTransform: Transform.thenMove(Transform.rotateX(0.9), [0, -300, -300]),
-            outTransform: Transform.thenMove(Transform.rotateZ(0.7), [0, window.innerHeight, -1000]),
-            inTransition: { duration: 650, curve: 'easeOut' },
-            outTransition: { duration: 500, curve: Easing.inCubic }
+            outOrigin: [0.5, 0.5],
+
+            // transition parameters
+            inTransition: true,
+            outTransition: true,
+            overlap: false
         }
     };
 

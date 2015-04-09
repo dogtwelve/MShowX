@@ -81,11 +81,12 @@ define(function(require, exports, module) {
         var size = this.options.filmSize - 2 * this.options.photoBorder;
 
         var photo = new ImageSurface({
-            size: [size, size],
+            size: [true, size],
             content: this.options.photoUrl,
             properties: {
                 zIndex: 2,
-                pointerEvents: 'none'
+                pointerEvents: 'none',
+                height: '100%'
             }
         });
 
@@ -101,7 +102,7 @@ define(function(require, exports, module) {
 
     SlideView.prototype.fadeIn = function() {
         this.photoModifier.setOpacity(1, { duration: 1500, curve: 'easeIn' });
-        this.shake();
+        //this.shake();
     };
 
     SlideView.prototype.shake = function() {

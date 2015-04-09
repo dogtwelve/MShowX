@@ -1,6 +1,7 @@
-define(function(require, exports, module) {
+define(function (require, exports, module) {
     var data = {
-        "nodesPool": [{
+        "nodesPool": [
+            {
             "shadowRadius": 0,
             "anchorX": 0.5,
             "colorFill": {
@@ -515,760 +516,734 @@ define(function(require, exports, module) {
 
         //golobal template
 
-        "MetNodeColorFill" : {
-            "fillColor" : {
-                "t" : "int",
-                "v" : 63744
+        "MetNodeColorFill": {
+            "fillColor": {
+                "t": "int",
+                "v": 63744
             },
-            "fillAlpha" : {
-                "t" : "float",
-                "v" : 1
+            "fillAlpha": {
+                "t": "float",
+                "v": 1
             }
         },
-        "VideoNode" : {
-            "videoURL" : {
-                "t" : "NSString",
-                "v" : null
+        "VideoNode": {
+            "videoURL": {
+                "t": "NSString",
+                "v": null
             },
-            "clickToPlay" : {
-                "t" : "char",
-                "v" : 0
+            "clickToPlay": {
+                "t": "char",
+                "v": 0
             },
-            "cover" : {
-                "t" : "NSString",
-                "v" : null
+            "cover": {
+                "t": "NSString",
+                "v": null
             },
-            "showCtrls" : {
-                "t" : "char",
-                "v" : 0
+            "showCtrls": {
+                "t": "char",
+                "v": 0
             },
-            "repeatCount" : {
-                "t" : "int",
-                "v" : 0
+            "repeatCount": {
+                "t": "int",
+                "v": 0
             },
-            "fullScreen" : {
-                "t" : "char",
-                "v" : 0
+            "fullScreen": {
+                "t": "char",
+                "v": 0
             }
         },
-        "ButtonNode" : {
-
-        },
-        "MetProject" : {
-            "author" : {
-                "t" : "NSString",
-                "v" : null
+        "ButtonNode": {},
+        "MetProject": {
+            "author": {
+                "t": "NSString",
+                "v": null
             },
-            "height" : {
-                "t" : "float",
-                "v" : 0
+            "height": {
+                "t": "float",
+                "v": 0
             },
-            "desc" : {
-                "t" : "NSString",
-                "v" : null
+            "desc": {
+                "t": "NSString",
+                "v": null
             },
-            "pagesPool" : {
-                "t" : "NSMutableArray",
-                "v" : [
-
-                ]
+            "pagesPool": {
+                "t": "NSMutableArray",
+                "v": []
             },
-            "pageIDS" : {
-                "t" : "NSMutableArray",
-                "v" : [
-
-                ]
+            "pageIDS": {
+                "t": "NSMutableArray",
+                "v": []
             },
-            "width" : {
-                "t" : "float",
-                "v" : 0
+            "width": {
+                "t": "float",
+                "v": 0
             },
-            "currentPageID" : {
-                "t" : "NSString",
-                "v" : null
+            "currentPageID": {
+                "t": "NSString",
+                "v": null
             },
-            "overlayNode" : {
-                "t" : "MetNode",
-                "v" : null
+            "overlayNode": {
+                "t": "MetNode",
+                "v": null
             },
-            "direction" : {
-                "t" : "int",
-                "v" : 0
+            "direction": {
+                "t": "int",
+                "v": 0
             },
-            "coverPage" : {
-                "t" : "int",
-                "v" : 0
+            "coverPage": {
+                "t": "int",
+                "v": 0
             },
-            "name" : {
-                "t" : "NSString",
-                "v" : null
+            "name": {
+                "t": "NSString",
+                "v": null
             }
         },
-        "AudioNode" : {
-            "clickToPlay" : {
-                "t" : "char",
-                "v" : 0
+        "AudioNode": {
+            "clickToPlay": {
+                "t": "char",
+                "v": 0
             },
-            "pause" : {
-                "t" : "NSString",
-                "v" : null
+            "pause": {
+                "t": "NSString",
+                "v": null
             },
-            "channel" : {
-                "t" : "int",
-                "v" : 0
+            "channel": {
+                "t": "int",
+                "v": 0
             },
-            "play" : {
-                "t" : "NSString",
-                "v" : null
+            "play": {
+                "t": "NSString",
+                "v": null
             },
-            "audioURL" : {
-                "t" : "NSString",
-                "v" : null
+            "audioURL": {
+                "t": "NSString",
+                "v": null
             },
-            "repeatCount" : {
-                "t" : "int",
-                "v" : 0
+            "repeatCount": {
+                "t": "int",
+                "v": 0
             }
         },
-        "MetNodeAction" : {
-            "objectID" : {
-                "t" : "NSString",
-                "v" : null
+        "MetNodeAction": {
+            "objectID": {
+                "t": "NSString",
+                "v": null
             },
-            "actionType" : {
-                "t" : "int",
-                "v" : 0
+            "actionType": {
+                "t": "int",
+                "v": 0
             },
-            "performs" : {
-                "t" : "NSMutableArray",
-                "v" : [
-
-                ]
+            "performs": {
+                "t": "NSMutableArray",
+                "v": []
             }
         },
-        "MetNodeGradientFill" : {
-            "gradientType" : {
-                "t" : "int",
-                "v" : 0
+        "MetNodeGradientFill": {
+            "gradientType": {
+                "t": "int",
+                "v": 0
             },
-            "gradientPoints" : {
-                "t" : "NSMutableArray",
-                "v" : null
+            "gradientPoints": {
+                "t": "NSMutableArray",
+                "v": null
             },
-            "gradientAngle" : {
-                "t" : "float",
-                "v" : 0
+            "gradientAngle": {
+                "t": "float",
+                "v": 0
             },
-            "fillAlpha" : {
-                "t" : "float",
-                "v" : 0
+            "fillAlpha": {
+                "t": "float",
+                "v": 0
             }
         },
-        "ShapeNode" : {
-            "radiusX" : {
-                "t" : "float",
-                "v" : 16
+        "ShapeNode": {
+            "radiusX": {
+                "t": "float",
+                "v": 16
             },
-            "lineWidth" : {
-                "t" : "float",
-                "v" : 0
+            "lineWidth": {
+                "t": "float",
+                "v": 0
             },
-            "contentMode" : {
-                "t" : "int",
-                "v" : 0
+            "contentMode": {
+                "t": "int",
+                "v": 0
             },
-            "lineStyle" : {
-                "t" : "int",
-                "v" : 0
+            "lineStyle": {
+                "t": "int",
+                "v": 0
             },
-            "imageUrl" : {
-                "t" : "NSString",
-                "v" : null
+            "imageUrl": {
+                "t": "NSString",
+                "v": null
             },
-            "path" : {
-                "t" : "NSBezierPath",
-                "v" : null
+            "path": {
+                "t": "NSBezierPath",
+                "v": null
             },
-            "lineStartStyle" : {
-                "t" : "int",
-                "v" : 0
+            "lineStartStyle": {
+                "t": "int",
+                "v": 0
             },
-            "gradientEndPoint" : {
-                "t" : "CGPoint",
-                "v" : "{0, 0}"
+            "gradientEndPoint": {
+                "t": "CGPoint",
+                "v": "{0, 0}"
             },
-            "radiusY" : {
-                "t" : "float",
-                "v" : 16
+            "radiusY": {
+                "t": "float",
+                "v": 16
             },
-            "shapeStyle" : {
-                "t" : "int",
-                "v" : 0
+            "shapeStyle": {
+                "t": "int",
+                "v": 0
             },
-            "gradientJoints" : {
-                "t" : "NSMutableArray",
-                "v" : null
+            "gradientJoints": {
+                "t": "NSMutableArray",
+                "v": null
             },
-            "gradientStartPoint" : {
-                "t" : "CGPoint",
-                "v" : "{0, 0}"
+            "gradientStartPoint": {
+                "t": "CGPoint",
+                "v": "{0, 0}"
             },
-            "lineEndStyle" : {
-                "t" : "int",
-                "v" : 0
+            "lineEndStyle": {
+                "t": "int",
+                "v": 0
             }
         },
-        "TextNode" : {
-            "blocks" : {
-                "t" : "NSMutableArray",
-                "v" : null
+        "TextNode": {
+            "blocks": {
+                "t": "NSMutableArray",
+                "v": null
             }
         },
-        "MetNodeEffect" : {
-            "id_" : {
-                "t" : "NSString",
-                "v" : null
+        "MetNodeEffect": {
+            "id_": {
+                "t": "NSString",
+                "v": null
             },
-            "autoplay" : {
-                "t" : "char",
-                "v" : 0
+            "autoplay": {
+                "t": "char",
+                "v": 0
             },
-            "delay" : {
-                "t" : "float",
-                "v" : 0
+            "delay": {
+                "t": "float",
+                "v": 0
             },
-            "effectType" : {
-                "t" : "int",
-                "v" : 0
+            "effectType": {
+                "t": "int",
+                "v": 0
             },
-            "properties" : {
-                "t" : "NSDictionary",
-                "v" : null
+            "properties": {
+                "t": "NSDictionary",
+                "v": null
             },
-            "repeatCount" : {
-                "t" : "int",
-                "v" : 0
+            "repeatCount": {
+                "t": "int",
+                "v": 0
             },
-            "objectID" : {
-                "t" : "NSString",
-                "v" : null
+            "objectID": {
+                "t": "NSString",
+                "v": null
             }
         },
-        "MetNodeImageFill" : {
-            "zoom" : {
-                "t" : "float",
-                "v" : 1
+        "MetNodeImageFill": {
+            "zoom": {
+                "t": "float",
+                "v": 1
             },
-            "imageURL" : {
-                "t" : "NSString",
-                "v" : null
+            "imageURL": {
+                "t": "NSString",
+                "v": null
             },
-            "presentationHandlerName" : {
-                "t" : "int",
-                "v" : 0
+            "presentationHandlerName": {
+                "t": "int",
+                "v": 0
             },
-            "imageRect" : {
-                "t" : "CGRect",
-                "v" : "{{0, 0}, {0, 0}}"
+            "imageRect": {
+                "t": "CGRect",
+                "v": "{{0, 0}, {0, 0}}"
             },
-            "handlerName" : {
-                "t" : "int",
-                "v" : 0
+            "handlerName": {
+                "t": "int",
+                "v": 0
             }
         },
-        "MetNodeActionPerform" : {
-            "intParam" : {
-                "t" : "int",
-                "v" : 0
+        "MetNodeActionPerform": {
+            "intParam": {
+                "t": "int",
+                "v": 0
             },
-            "stringParam" : {
-                "t" : "NSString",
-                "v" : null
+            "stringParam": {
+                "t": "NSString",
+                "v": null
             },
-            "performType" : {
-                "t" : "int",
-                "v" : 0
+            "performType": {
+                "t": "int",
+                "v": 0
             },
-            "performSubType" : {
-                "t" : "int",
-                "v" : 0
+            "performSubType": {
+                "t": "int",
+                "v": 0
             },
-            "targetID" : {
-                "t" : "NSString",
-                "v" : null
+            "targetID": {
+                "t": "NSString",
+                "v": null
             }
         },
-        "MetProjectPage" : {
-            "nodesPool" : {
-                "t" : "NSMutableArray",
-                "v" : [
-
-                ]
+        "MetProjectPage": {
+            "nodesPool": {
+                "t": "NSMutableArray",
+                "v": []
             },
-            "pageIDS" : {
-                "t" : "NSMutableArray",
-                "v" : [
-
-                ]
+            "pageIDS": {
+                "t": "NSMutableArray",
+                "v": []
             },
-            "parentPageID" : {
-                "t" : "NSString",
-                "v" : null
+            "parentPageID": {
+                "t": "NSString",
+                "v": null
             },
-            "id_" : {
-                "t" : "NSString",
-                "v" : null
+            "id_": {
+                "t": "NSString",
+                "v": null
             },
-            "selected" : {
-                "t" : "char",
-                "v" : 0
+            "selected": {
+                "t": "char",
+                "v": 0
             },
-            "effectsPool" : {
-                "t" : "NSMutableArray",
-                "v" : [
-
-                ]
+            "effectsPool": {
+                "t": "NSMutableArray",
+                "v": []
             },
-            "actionsPool" : {
-                "t" : "NSMutableArray",
-                "v" : [
-
-                ]
+            "actionsPool": {
+                "t": "NSMutableArray",
+                "v": []
             },
-            "nodeIDS" : {
-                "t" : "NSMutableArray",
-                "v" : [
-
-                ]
+            "nodeIDS": {
+                "t": "NSMutableArray",
+                "v": []
             },
-            "name" : {
-                "t" : "NSString",
-                "v" : null
+            "name": {
+                "t": "NSString",
+                "v": null
             },
-            "hooksPool" : {
-                "t" : "NSMutableArray",
-                "v" : [
-
-                ]
+            "hooksPool": {
+                "t": "NSMutableArray",
+                "v": []
             }
         },
-        "MetNodeShadow" : {
-            "shadowWidth" : {
-                "t" : "float",
-                "v" : 0
+        "MetNodeShadow": {
+            "shadowWidth": {
+                "t": "float",
+                "v": 0
             },
-            "shadowAlpha" : {
-                "t" : "float",
-                "v" : 1
+            "shadowAlpha": {
+                "t": "float",
+                "v": 1
             },
-            "shadowColor" : {
-                "t" : "int",
-                "v" : 16777215
+            "shadowColor": {
+                "t": "int",
+                "v": 16777215
             },
-            "shadowDistance" : {
-                "t" : "float",
-                "v" : 1
+            "shadowDistance": {
+                "t": "float",
+                "v": 1
             },
-            "shadowAngle" : {
-                "t" : "int",
-                "v" : 0
+            "shadowAngle": {
+                "t": "int",
+                "v": 0
             }
         },
-        "MetNodeStroke" : {
-            "strokeLineType" : {
-                "t" : "int",
-                "v" : 0
+        "MetNodeStroke": {
+            "strokeLineType": {
+                "t": "int",
+                "v": 0
             },
-            "strokeColor" : {
-                "t" : "int",
-                "v" : 16777215
+            "strokeColor": {
+                "t": "int",
+                "v": 16777215
             },
-            "strokeType" : {
-                "t" : "int",
-                "v" : 0
+            "strokeType": {
+                "t": "int",
+                "v": 0
             },
-            "strokeAlpha" : {
-                "t" : "float",
-                "v" : 1
+            "strokeAlpha": {
+                "t": "float",
+                "v": 1
             },
-            "strokeWidth" : {
-                "t" : "float",
-                "v" : 0
+            "strokeWidth": {
+                "t": "float",
+                "v": 0
             }
         },
-        "WebNode" : {
-            "autoLoad" : {
-                "t" : "char",
-                "v" : 0
+        "WebNode": {
+            "autoLoad": {
+                "t": "char",
+                "v": 0
             },
-            "URL" : {
-                "t" : "NSString",
-                "v" : null
+            "URL": {
+                "t": "NSString",
+                "v": null
             },
-            "clickable" : {
-                "t" : "char",
-                "v" : 0
+            "clickable": {
+                "t": "char",
+                "v": 0
             },
-            "cover" : {
-                "t" : "NSString",
-                "v" : null
+            "cover": {
+                "t": "NSString",
+                "v": null
             },
-            "transparent" : {
-                "t" : "char",
-                "v" : 0
+            "transparent": {
+                "t": "char",
+                "v": 0
             }
         },
-        "MetAnimNode" : {
-            "easing" : {
-                "t" : "int",
-                "v" : 0
+        "MetAnimNode": {
+            "easing": {
+                "t": "int",
+                "v": 0
             },
-            "keyframeNodeIDS" : {
-                "t" : "NSMutableArray",
-                "v" : [
-
-                ]
+            "keyframeNodeIDS": {
+                "t": "NSMutableArray",
+                "v": []
             },
-            "repeatCount" : {
-                "t" : "int",
-                "v" : 0
+            "repeatCount": {
+                "t": "int",
+                "v": 0
             },
-            "delay" : {
-                "t" : "float",
-                "v" : 0
+            "delay": {
+                "t": "float",
+                "v": 0
             },
-            "autoplay" : {
-                "t" : "char",
-                "v" : 0
+            "autoplay": {
+                "t": "char",
+                "v": 0
             },
-            "autoreverses" : {
-                "t" : "char",
-                "v" : 0
+            "autoreverses": {
+                "t": "char",
+                "v": 0
             },
-            "duration" : {
-                "t" : "float",
-                "v" : 0
+            "duration": {
+                "t": "float",
+                "v": 0
             },
-            "interval" : {
-                "t" : "float",
-                "v" : 0
+            "interval": {
+                "t": "float",
+                "v": 0
             }
         },
-        "MetNodeHook" : {
-            "targets" : {
-                "t" : "NSMutableArray",
-                "v" : null
+        "MetNodeHook": {
+            "targets": {
+                "t": "NSMutableArray",
+                "v": null
             },
-            "source" : {
-                "t" : "MetNodeHookDescriptor",
-                "v" : null
+            "source": {
+                "t": "MetNodeHookDescriptor",
+                "v": null
             }
         },
-        "CubeNode" : {
-            "fullscreen" : {
-                "t" : "char",
-                "v" : 0
+        "CubeNode": {
+            "fullscreen": {
+                "t": "char",
+                "v": 0
             }
         },
-        "MetStateNode" : {
-            "autoPlay" : {
-                "t" : "char",
-                "v" : 0
+        "MetStateNode": {
+            "autoPlay": {
+                "t": "char",
+                "v": 0
             },
-            "loops" : {
-                "t" : "int",
-                "v" : 0
+            "loops": {
+                "t": "int",
+                "v": 0
             },
-            "transition" : {
-                "t" : "int",
-                "v" : 0
+            "transition": {
+                "t": "int",
+                "v": 0
             },
-            "delay" : {
-                "t" : "float",
-                "v" : 0
+            "delay": {
+                "t": "float",
+                "v": 0
             },
-            "duration" : {
-                "t" : "float",
-                "v" : 0
+            "duration": {
+                "t": "float",
+                "v": 0
             },
-            "state" : {
-                "t" : "int",
-                "v" : 0
+            "state": {
+                "t": "int",
+                "v": 0
             },
-            "interval" : {
-                "t" : "float",
-                "v" : 0
+            "interval": {
+                "t": "float",
+                "v": 0
             }
         },
-        "MetKeyframeNode" : {
-            "controlBX" : {
-                "t" : "float",
-                "v" : 0
+        "MetKeyframeNode": {
+            "controlBX": {
+                "t": "float",
+                "v": 0
             },
-            "controlBY" : {
-                "t" : "float",
-                "v" : 0
+            "controlBY": {
+                "t": "float",
+                "v": 0
             },
-            "performs" : {
-                "t" : "NSMutableArray",
-                "v" : [
-
-                ]
+            "performs": {
+                "t": "NSMutableArray",
+                "v": []
             },
-            "controlAX" : {
-                "t" : "float",
-                "v" : 0
+            "controlAX": {
+                "t": "float",
+                "v": 0
             },
-            "time" : {
-                "t" : "float",
-                "v" : 0
+            "time": {
+                "t": "float",
+                "v": 0
             },
-            "controlAY" : {
-                "t" : "float",
-                "v" : 0
+            "controlAY": {
+                "t": "float",
+                "v": 0
             }
         },
-        "MetNode" : {
-            "nodeIDS" : {
-                "t" : "NSMutableArray",
-                "v" : [
-
-                ]
+        "MetNode": {
+            "nodeIDS": {
+                "t": "NSMutableArray",
+                "v": []
             },
-            "shadowRadius" : {
-                "t" : "float",
-                "v" : 0
+            "shadowRadius": {
+                "t": "float",
+                "v": 0
             },
-            "rotation" : {
-                "t" : "float",
-                "v" : 0
+            "rotation": {
+                "t": "float",
+                "v": 0
             },
-            "maskNodeID" : {
-                "t" : "NSString",
-                "v" : null
+            "maskNodeID": {
+                "t": "NSString",
+                "v": null
             },
-            "gradientFill" : {
-                "t" : "MetNodeGradientFill",
-                "v" : null
+            "gradientFill": {
+                "t": "MetNodeGradientFill",
+                "v": null
             },
-            "nodeStroke" : {
-                "t" : "MetNodeStroke",
-                "v" : null
+            "nodeStroke": {
+                "t": "MetNodeStroke",
+                "v": null
             },
-            "skewY" : {
-                "t" : "float",
-                "v" : 0
+            "skewY": {
+                "t": "float",
+                "v": 0
             },
-            "positionX" : {
-                "t" : "float",
-                "v" : 0
+            "positionX": {
+                "t": "float",
+                "v": 0
             },
-            "opacity" : {
-                "t" : "float",
-                "v" : 1
+            "opacity": {
+                "t": "float",
+                "v": 1
             },
-            "borderColor" : {
-                "t" : "int",
-                "v" : 0
+            "borderColor": {
+                "t": "int",
+                "v": 0
             },
-            "zorder" : {
-                "t" : "int",
-                "v" : 0
+            "zorder": {
+                "t": "int",
+                "v": 0
             },
-            "selected" : {
-                "t" : "char",
-                "v" : 0
+            "selected": {
+                "t": "char",
+                "v": 0
             },
-            "hidden" : {
-                "t" : "char",
-                "v" : 0
+            "hidden": {
+                "t": "char",
+                "v": 0
             },
-            "paging_v" : {
-                "t" : "char",
-                "v" : 0
+            "paging_v": {
+                "t": "char",
+                "v": 0
             },
-            "locked" : {
-                "t" : "char",
-                "v" : 0
+            "locked": {
+                "t": "char",
+                "v": 0
             },
-            "parentNodeID" : {
-                "t" : "NSString",
-                "v" : null
+            "parentNodeID": {
+                "t": "NSString",
+                "v": null
             },
-            "clips" : {
-                "t" : "char",
-                "v" : 0
+            "clips": {
+                "t": "char",
+                "v": 0
             },
-            "sizeY" : {
-                "t" : "float",
-                "v" : 0
+            "sizeY": {
+                "t": "float",
+                "v": 0
             },
-            "fillType" : {
-                "t" : "int",
-                "v" : 0
+            "fillType": {
+                "t": "int",
+                "v": 0
             },
-            "positionY" : {
-                "t" : "float",
-                "v" : 0
+            "positionY": {
+                "t": "float",
+                "v": 0
             },
-            "shadowColor" : {
-                "t" : "int",
-                "v" : 0
+            "shadowColor": {
+                "t": "int",
+                "v": 0
             },
-            "pagingWidth" : {
-                "t" : "float",
-                "v" : 0
+            "pagingWidth": {
+                "t": "float",
+                "v": 0
             },
-            "name" : {
-                "t" : "NSString",
-                "v" : null
+            "name": {
+                "t": "NSString",
+                "v": null
             },
-            "borderStyle" : {
-                "t" : "int",
-                "v" : 0
+            "borderStyle": {
+                "t": "int",
+                "v": 0
             },
-            "imageFill" : {
-                "t" : "MetNodeImageFill",
-                "v" : null
+            "imageFill": {
+                "t": "MetNodeImageFill",
+                "v": null
             },
-            "borderWidth" : {
-                "t" : "float",
-                "v" : 0
+            "borderWidth": {
+                "t": "float",
+                "v": 0
             },
-            "paging_h" : {
-                "t" : "char",
-                "v" : 0
+            "paging_h": {
+                "t": "char",
+                "v": 0
             },
-            "id_" : {
-                "t" : "NSString",
-                "v" : null
+            "id_": {
+                "t": "NSString",
+                "v": null
             },
-            "color" : {
-                "t" : "int",
-                "v" : 0
+            "color": {
+                "t": "int",
+                "v": 0
             },
-            "scrollable_v" : {
-                "t" : "char",
-                "v" : 0
+            "scrollable_v": {
+                "t": "char",
+                "v": 0
             },
-            "anchorY" : {
-                "t" : "float",
-                "v" : 0.5
+            "anchorY": {
+                "t": "float",
+                "v": 0.5
             },
-            "editing" : {
-                "t" : "char",
-                "v" : 0
+            "editing": {
+                "t": "char",
+                "v": 0
             },
-            "shadowAngle" : {
-                "t" : "float",
-                "v" : 0
+            "shadowAngle": {
+                "t": "float",
+                "v": 0
             },
-            "skewX" : {
-                "t" : "float",
-                "v" : 0
+            "skewX": {
+                "t": "float",
+                "v": 0
             },
-            "nodeShadow" : {
-                "t" : "MetNodeShadow",
-                "v" : null
+            "nodeShadow": {
+                "t": "MetNodeShadow",
+                "v": null
             },
-            "scaleY" : {
-                "t" : "float",
-                "v" : 1
+            "scaleY": {
+                "t": "float",
+                "v": 1
             },
-            "scrollable_h" : {
-                "t" : "char",
-                "v" : 0
+            "scrollable_h": {
+                "t": "char",
+                "v": 0
             },
-            "mh" : {
-                "t" : "float",
-                "v" : 0
+            "mh": {
+                "t": "float",
+                "v": 0
             },
-            "ch" : {
-                "t" : "float",
-                "v" : 0
+            "ch": {
+                "t": "float",
+                "v": 0
             },
-            "mw" : {
-                "t" : "float",
-                "v" : 0
+            "mw": {
+                "t": "float",
+                "v": 0
             },
-            "anchorX" : {
-                "t" : "float",
-                "v" : 0.5
+            "anchorX": {
+                "t": "float",
+                "v": 0.5
             },
-            "scaleX" : {
-                "t" : "float",
-                "v" : 1
+            "scaleX": {
+                "t": "float",
+                "v": 1
             },
-            "cw" : {
-                "t" : "float",
-                "v" : 0
+            "cw": {
+                "t": "float",
+                "v": 0
             },
-            "colorFill" : {
-                "t" : "MetNodeColorFill",
-                "v" : null
+            "colorFill": {
+                "t": "MetNodeColorFill",
+                "v": null
             },
-            "mx" : {
-                "t" : "float",
-                "v" : 0
+            "mx": {
+                "t": "float",
+                "v": 0
             },
-            "cx" : {
-                "t" : "float",
-                "v" : 0
+            "cx": {
+                "t": "float",
+                "v": 0
             },
-            "sizeX" : {
-                "t" : "float",
-                "v" : 0
+            "sizeX": {
+                "t": "float",
+                "v": 0
             },
-            "pagingHeight" : {
-                "t" : "float",
-                "v" : 0
+            "pagingHeight": {
+                "t": "float",
+                "v": 0
             },
-            "cy" : {
-                "t" : "float",
-                "v" : 0
+            "cy": {
+                "t": "float",
+                "v": 0
             },
-            "my" : {
-                "t" : "float",
-                "v" : 0
+            "my": {
+                "t": "float",
+                "v": 0
             },
-            "pickIgnored" : {
-                "t" : "char",
-                "v" : 0
+            "pickIgnored": {
+                "t": "char",
+                "v": 0
             }
         },
-        "MetNodeHookDescriptor" : {
-            "mutual" : {
-                "t" : "char",
-                "v" : 0
+        "MetNodeHookDescriptor": {
+            "mutual": {
+                "t": "char",
+                "v": 0
             },
-            "fromValue" : {
-                "t" : "NSString",
-                "v" : null
+            "fromValue": {
+                "t": "NSString",
+                "v": null
             },
-            "objectType" : {
-                "t" : "int",
-                "v" : 0
+            "objectType": {
+                "t": "int",
+                "v": 0
             },
-            "prop" : {
-                "t" : "NSString",
-                "v" : null
+            "prop": {
+                "t": "NSString",
+                "v": null
             },
-            "toValue" : {
-                "t" : "NSString",
-                "v" : null
+            "toValue": {
+                "t": "NSString",
+                "v": null
             },
-            "delta" : {
-                "t" : "NSString",
-                "v" : null
+            "delta": {
+                "t": "NSString",
+                "v": null
             },
-            "objectID" : {
-                "t" : "NSString",
-                "v" : null
+            "objectID": {
+                "t": "NSString",
+                "v": null
             }
         }
     }
-    var RawData = {data : data};
-    RawData.getRawData = function() {
+    var RawData = {data: data};
+    RawData.getRawData = function () {
         return this.data;
     };
 
