@@ -1,0 +1,51 @@
+{
+  "name": "react-famous",
+  "description": "React bridge to Famo.us",
+  "version": "0.1.7",
+  "homepage": "https://github.com/pilwon/react-famous",
+  "keywords": [
+    "react",
+    "react-component",
+    "famo.us",
+    "famous"
+  ],
+  "author": {
+    "name": "Pilwon Huh",
+    "email": "pilwon@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pilwon/react-famous"
+  },
+  "bugs": {
+    "url": "https://github.com/pilwon/react-famous/issues"
+  },
+  "peerDependencies": {
+    "famous": ">=0.3.5",
+    "react": ">=0.13.1"
+  },
+  "_id": "react-famous@0.1.7",
+  "scripts": {},
+  "_shasum": "2c1d6952de17c86a712c068df328d9176855e007",
+  "_from": "react-famous@>=0.1.7 <0.2.0",
+  "_resolved": "https://registry.npmjs.org/react-famous/-/react-famous-0.1.7.tgz",
+  "_npmVersion": "2.5.1",
+  "_nodeVersion": "0.12.0",
+  "_npmUser": {
+    "name": "pilwon",
+    "email": "pilwon@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "pilwon",
+      "email": "pilwon@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "2c1d6952de17c86a712c068df328d9176855e007",
+    "tarball": "http://registry.npmjs.org/react-famous/-/react-famous-0.1.7.tgz"
+  },
+  "directories": {},
+  "readme": "ERROR: No README data found!"
+}
