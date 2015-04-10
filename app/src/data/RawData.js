@@ -512,10 +512,15 @@ define(function (require, exports, module) {
             "state1"],
         "class": "MetProjectPage",
         "name": "Page1",
-        "hooksPool": [],
+        "hooksPool": []
 
-        //golobal template
 
+
+    };
+
+    //global template
+    var golobal_config =
+    {
         "MetNodeColorFill": {
             "fillColor": {
                 "t": "int",
@@ -1241,10 +1246,17 @@ define(function (require, exports, module) {
                 "v": null
             }
         }
-    }
-    var RawData = {data: data};
+    };
+
+    var RawData = {
+        data: data,
+        config:golobal_config
+    };
     RawData.getRawData = function () {
         return this.data;
+    };
+    RawData.getConfig = function () {
+        return this.config;
     };
 
     module.exports = RawData;
